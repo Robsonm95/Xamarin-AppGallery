@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.RotuloControler.Rotulo">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="FontFamily,fontsize,fontattributes" />
+                <Label Text="Texto 1" FontFamily="sans-serif-thin"/>
+                <Label Text="Texto 1" FontFamily="sans-serif-light"/>
+                <Label Text="Texto 1" FontFamily="sans-serif-condensed" />
+                <Label Text="Texto 1" FontFamily="sans-serif-condensed" FontAttributes="Bold"/>
+                
+
+                <Label Text="Texto 2"  FontSize="24"/>
+                
+                <Label Text="HorizontalTextAlign, verticalTextAlign"  />
+                <Label Text="Texto 1" 
+                       HorizontalTextAlignment="Center" 
+                       BackgroundColor="Brown" HeightRequest="60" WidthRequest="100" HorizontalOptions="Start"/>
+                <Label Text="Texto 2" 
+                       VerticalTextAlignment="Center" 
+                       BackgroundColor="Brown" HeightRequest="60" WidthRequest="100" HorizontalOptions="Start"/>
+                
+                <Label Text="TextType" />
+                <Label Text="Texto &lt;strong&gt; 01 &lt;/strong&gt;" TextType="Html"/>
+                <Label TextType="Html">
+                    <![CDATA[
+                        Texto <strong><i>02</i></></strong>
+                    ]]>
+                </Label>
+
+                <Label Text="FormattedText" />
+                <Label >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Texto " TextColor="Green" FontSize="14"/>
+                            <Span Text="01" TextColor="Red" FontSize="20"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    
+                </Label>
+
+
+                <Label Text="TextColor" />
+                <Label Text="Texto 1" TextColor="DarkGoldenrod"/>
+                <Label Text="Texto 1" TextColor="Yellow"/>
+                <Label Text="Texto 2" TextColor="#f00"/>
+                <Label Text="Texto 2" TextColor="#7FFF0000"/>
+                
+                <Label Text="TextDecorations" TextDecorations="None"/>
+                <Label Text="Texto 1" TextDecorations="Strikethrough"/>
+                <Label Text="Texto 2" TextDecorations="Underline"/>
+
+                <Label Text="CharacterSpacing" />
+                <Label Text="Texto 1" CharacterSpacing="-2"/>
+                <Label Text="Texto 2" CharacterSpacing="5"/>
+
+                <Label Text="LineHeight" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." 
+                       MaxLines="3"
+                       LineHeight="1.2"
+                       />
+                
+                <Label Text="MaxLines" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." 
+                       MaxLines="3"
+                       />
+
+
+                <Label Text="LineBreakMode" />
+                <Label TextColor="Green" 
+                       LineBreakMode="NoWrap"
+                       Text="NoWrap: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." />
+                
+                <Label 
+                    LineBreakMode="CharacterWrap"
+                    Text="CharacterWrap: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." />
+                
+                <Label 
+                    TextColor="Green" 
+                    LineBreakMode="HeadTruncation"
+                    Text="Head: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." />
+                
+                <Label 
+                    LineBreakMode="MiddleTruncation"
+                    Text="Middle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." />
+                
+                <Label TextColor="Green" 
+                       LineBreakMode="TailTruncation"
+                    Text="Tail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in posuere erat. Integer efficitur sem est, vitae eleifend velit ullamcorper egestas. Phasellus suscipit diam at tempus ornare. Fusce erat arcu, elementum ut libero in, mollis congue lectus. Proin fringilla massa id quam vestibulum ullamcorper. Proin condimentum sapien eget neque pharetra porta. Maecenas pharetra auctor elit, ac pharetra lorem consequat a. Pellentesque lacus massa, rhoncus in aliquam nec, blandit et velit. Suspendisse facilisis consequat congue. Duis vehicula, libero sit amet varius tincidunt, erat nibh tincidunt est, id iaculis nulla nulla eu urna. Nullam bibendum massa nec lorem sollicitudin ornare eu eget tortor. In vestibulum dolor vitae mollis malesuada. Maecenas nunc urna, viverra ac ornare et, ultricies in magna. Aliquam non metus suscipit, maximus nisl nec, tincidunt sem." />
+                
+                <!-- Template base -->
+                <!--
+                <Label Text="Base" />
+                <Label Text="Texto 1" />
+                <Label Text="Texto 2" />
+                -->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

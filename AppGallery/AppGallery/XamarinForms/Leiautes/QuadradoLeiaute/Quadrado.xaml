@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.QuadradoLeiaute.Quadrado">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="40" BackgroundColor="White">
+            <Frame HorizontalOptions="Center" CornerRadius="100" Padding="0" IsClippedToBounds="True" BorderColor="Black">
+                <BoxView Color="Green" WidthRequest="150" HeightRequest="150"/>
+            </Frame>
+
+            <Frame Padding="0">
+                <StackLayout >
+                    <Label Text="Titulo" HorizontalOptions="Center" TextColor="Black" Margin="20"/>
+                    <BoxView HeightRequest="1" Color="Gray" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Texto" TextColor="Black" Margin="20"/>
+                </StackLayout>
+            </Frame>
+            <Frame HasShadow="False" CornerRadius="1000" BorderColor="Green">
+                <Label Text="Welcome to Xamarin.Forms!" TextColor="Black"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </Frame>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:AppGallery.AppBase"
+             x:Class="AppGallery.AppBase.Menu">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Páginas"/>
+                    <Button Text="ContentPage" Clicked="AbrirContentPage"/>
+                    <Button Text="NavigationPage" Clicked="AbrirNavigationPage"/>
+                    <Button Text="CarouselPage" Clicked="AbrirCarouselPage"/>
+                    <Button Text="TabbedPage" Clicked="AbrirTabbedPage"/>
+                    <Button Text="MasterDetailPage" Clicked="AbrirMasterDetailPage"/>
+                    <Button Text="Modal" Clicked="AbrirModal"/>
+                    <Label Text="Layout"/>
+                    <Button Text="StackLayout" Clicked="AbrirPilha"/>
+                    <Button Text="GridLayout" Clicked="AbrirGrid"/>
+                    <Button Text="AbsoluteLayout" Clicked="AbrirAbsolute"/>
+                    <Button Text="FlexLayout" Clicked="AbrirFlexLayout"/>
+                    <Button Text="ScrollView" Clicked="AbrirScrollView"/>
+                    <Button Text="ContentView" Clicked="AbrirContentView"/>
+                    <Button Text="Frame" Clicked="AbrirFrame"/>
+                    <Label Text="Controles"/>
+                    <Button Text="BoxView" Clicked="AbrirBoxView"/>
+                    <Button Text="Label" Clicked="AbrirLabel"/>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:Inicio/>
+            </x:Arguments>
+        </NavigationPage>
+        
+    </FlyoutPage.Detail>
+</FlyoutPage>

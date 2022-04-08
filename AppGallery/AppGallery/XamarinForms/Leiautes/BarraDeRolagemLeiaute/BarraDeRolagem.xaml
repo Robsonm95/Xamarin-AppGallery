@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Leiautes.BarraDeRolagemLeiaute.BarraDeRolagem">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ScrollView Orientation="Both" Grid.Row="0" Scrolled="ScrolledView_Scrolled">
+                <StackLayout Padding="10">
+                    <BoxView Color="Black" WidthRequest="500" HeightRequest="500"/>
+                    <Label x:Name="Posicao" Text="" BackgroundColor="#000"/>
+                </StackLayout>
+                
+            </ScrollView>
+            <ScrollView x:Name="BarraDeRolagemScroll" Grid.Row="1">
+                <StackLayout Margin="20">
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Margin="10">
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                            <BoxView Background="black" />
+                        </StackLayout>
+                    </ScrollView>
+                    <Button Text="Clique me" Clicked="RolarParaSegundaLabel" />
+                    <Label Text="
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat massa a mauris faucibus luctus. Integer rutrum placerat ipsum, eu lacinia nibh vehicula auctor. Quisque eu nisi eu sem condimentum consectetur non sed velit. Aliquam non posuere quam. In finibus convallis leo, sed lobortis est. Nulla ut massa sit amet libero gravida commodo. In orci tortor, pretium ut pharetra in, efficitur non turpis.
+    Vestibulum a ullamcorper nulla. Vestibulum consequat consequat turpis vitae accumsan. Donec euismod tempor egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque nisi dolor, porta at odio a, efficitur auctor tellus. Integer augue orci, placerat eget arcu vel, semper varius ipsum. Suspendisse id felis et leo interdum lobortis. Vestibulum consectetur suscipit blandit. Donec et ultricies elit. Mauris non arcu eu ex aliquet porta vitae ut urna.
+    Aliquam sit amet nisl a lectus sagittis tincidunt. In cursus, erat non egestas viverra, lectus turpis gravida diam, nec sodales augue nibh eget nunc. Cras rutrum arcu eget consequat ullamcorper. Nullam vitae porttitor neque. Morbi pretium efficitur consequat. In ullamcorper ipsum venenatis, semper lorem id, cursus nisi. Duis mollis congue blandit. Aliquam velit felis, feugiat vitae ipsum eget, finibus ullamcorper sapien. Cras a eros a sem tempor accumsan. Aenean non vehicula est. Ut ultrices lacus ex, sit amet iaculis erat finibus et. Praesent fringilla pretium orci, vitae molestie velit volutpat eget. Fusce in nunc neque.
+    Duis vel turpis vel velit rhoncus venenatis ut ut nunc. Donec ultrices leo quis tristique ultrices. Praesent placerat blandit magna id euismod. In lobortis diam mi, id placerat lacus pretium id. Morbi nec varius purus, et luctus elit. Aliquam dignissim egestas dui. Curabitur neque dui, eleifend pulvinar eros a, placerat vehicula odio. Fusce hendrerit diam sed diam efficitur commodo mollis at mi. Vivamus ex arcu, fermentum et mi tincidunt, efficitur euismod odio. Curabitur non egestas massa. In sed sem quis orci tincidunt semper.
+    Mauris vestibulum, metus ac maximus bibendum, turpis sapien rhoncus metus, vitae accumsan lacus leo nec purus. Quisque pulvinar ornare luctus. Phasellus dignissim posuere nibh, a porta orci tincidunt imperdiet. Cras condimentum venenatis dolor. In sagittis lobortis venenatis. Quisque iaculis et felis et efficitur. Vestibulum eget massa mauris. Morbi vel facilisis eros, id faucibus arcu. Curabitur ultrices sodales lorem id semper. In ullamcorper, velit eleifend dictum sollicitudin, leo ex aliquam lorem, sit amet fringilla nunc nibh nec lacus. Quisque et felis iaculis, euismod turpis in, tempus ante. Nullam non tortor in ex fringilla luctus in vitae urna. "
+                       BackgroundColor="Black"
+                       TextColor="White"
+                       Padding="20"/>
+
+                    <Label x:Name="SegundaLabel" Text="
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat massa a mauris faucibus luctus. Integer rutrum placerat ipsum, eu lacinia nibh vehicula auctor. Quisque eu nisi eu sem condimentum consectetur non sed velit. Aliquam non posuere quam. In finibus convallis leo, sed lobortis est. Nulla ut massa sit amet libero gravida commodo. In orci tortor, pretium ut pharetra in, efficitur non turpis.
+    Vestibulum a ullamcorper nulla. Vestibulum consequat consequat turpis vitae accumsan. Donec euismod tempor egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque nisi dolor, porta at odio a, efficitur auctor tellus. Integer augue orci, placerat eget arcu vel, semper varius ipsum. Suspendisse id felis et leo interdum lobortis. Vestibulum consectetur suscipit blandit. Donec et ultricies elit. Mauris non arcu eu ex aliquet porta vitae ut urna.
+    Aliquam sit amet nisl a lectus sagittis tincidunt. In cursus, erat non egestas viverra, lectus turpis gravida diam, nec sodales augue nibh eget nunc. Cras rutrum arcu eget consequat ullamcorper. Nullam vitae porttitor neque. Morbi pretium efficitur consequat. In ullamcorper ipsum venenatis, semper lorem id, cursus nisi. Duis mollis congue blandit. Aliquam velit felis, feugiat vitae ipsum eget, finibus ullamcorper sapien. Cras a eros a sem tempor accumsan. Aenean non vehicula est. Ut ultrices lacus ex, sit amet iaculis erat finibus et. Praesent fringilla pretium orci, vitae molestie velit volutpat eget. Fusce in nunc neque.
+    Duis vel turpis vel velit rhoncus venenatis ut ut nunc. Donec ultrices leo quis tristique ultrices. Praesent placerat blandit magna id euismod. In lobortis diam mi, id placerat lacus pretium id. Morbi nec varius purus, et luctus elit. Aliquam dignissim egestas dui. Curabitur neque dui, eleifend pulvinar eros a, placerat vehicula odio. Fusce hendrerit diam sed diam efficitur commodo mollis at mi. Vivamus ex arcu, fermentum et mi tincidunt, efficitur euismod odio. Curabitur non egestas massa. In sed sem quis orci tincidunt semper.
+    Mauris vestibulum, metus ac maximus bibendum, turpis sapien rhoncus metus, vitae accumsan lacus leo nec purus. Quisque pulvinar ornare luctus. Phasellus dignissim posuere nibh, a porta orci tincidunt imperdiet. Cras condimentum venenatis dolor. In sagittis lobortis venenatis. Quisque iaculis et felis et efficitur. Vestibulum eget massa mauris. Morbi vel facilisis eros, id faucibus arcu. Curabitur ultrices sodales lorem id semper. In ullamcorper, velit eleifend dictum sollicitudin, leo ex aliquam lorem, sit amet fringilla nunc nibh nec lacus. Quisque et felis iaculis, euismod turpis in, tempus ante. Nullam non tortor in ex fringilla luctus in vitae urna. "
+                       BackgroundColor="Black"
+                       TextColor="White"
+                       Padding="20"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

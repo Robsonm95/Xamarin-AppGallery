@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppGallery.XamarinForms.Paginas.PaginaDeCarrossel"
+             x:Class="AppGallery.XamarinForms.Paginas.PaginaMenuLateral.MenuLateral">
+    <!-- Menu -->
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="Pagina 1" Clicked="AbrirPagina1" BackgroundColor="Transparent"/>
+                <Button Text="Pagina 2" Clicked="AbrirPagina2" BackgroundColor="Transparent"/>
+                <Button Text="Pagina 3" Clicked="AbrirPagina3" BackgroundColor="Transparent"/>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <!-- Conteudo -->
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:Page1/>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
